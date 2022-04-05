@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quessing game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-4 offset-md-4">
+            <div class="card text-center">
+                <div class="card-header">
+                    <p class="m-0">Question №<span id="orderNumberField">0</span></p>
+                </div>
+                <div class="card-body">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <h3 class="card-title m-0"><span id="answerField">You have made a number?</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="btn-group">
+                        <button class="btn btn-info" id="btnLess">&#129047;<br>Less</button>
+                        <button class="btn btn-success btn-lg" id="btnEqual">Сorrectly &#10004;</button>
+                        <button class="btn btn-info" id="btnOver">Over <br>&#129045;</button>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="button" id="Retry" value="Play again &#9971" onClick="window.location.href=window.location.href">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="box"  class="box">
+    <div class="box_txt"><br>
+        <p>Let's play a game. You'll guess the number and I'll guess it.<br>
+        <button id="btn">Alright &rarr;</button></p>
+    </div>
+</div>
+<div id="box2"  class="box2">
+    <div class="box_txt"><br>
+    <form>Minimum number<br>
+        <input   class="input" type="text" id="minValue" value="0">
+        <button id="btn2" type="submit">Alright &rarr;</button>
+    </form>
+    </div>
+</div>
+<div id="box3"  class="box3">
+    <div class="box_txt"><br>
+    <form>Maximum number<br>
+        <input class="input" type="text" id="maxValue" value="100">
+        <button id="btn3" type="submit">Alright &rarr;</button>
+    </form>
+    </div>
+</div>
+<div id="box4"  class="box4">
+    <div class="box_txt" id="box_flex"><br>
+        <div id="box_txt4" ></div>
+        <button id="btn4"type="submit">Start &rarr; </button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
